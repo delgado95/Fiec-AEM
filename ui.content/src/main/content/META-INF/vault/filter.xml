@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/fiec-aem" mode="merge"/>
+    <filter root="/content/fiec-aem" mode="merge"/>
+    <filter root="/content/dam/fiec-aem" mode="merge">
+        <exclude pattern="/content/dam/fiec-aem(/.*)?"/>
+        <include pattern="/content/dam/fiec-aem/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/fiec-aem/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/fiec-aem" mode="merge"/>
+</workspaceFilter>

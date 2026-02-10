@@ -14,20 +14,20 @@ import com.adobe.cq.export.json.ExporterConstants;
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
 public class TitleModel implements ComponentExporter {
 
-    static final String RESOURCE_TYPE = "eventsmap/components/event";
+    static final String RESOURCE_TYPE = "fiec-aem/components/title-component";
 
     @ValueMapValue
     private String title;
 
     @ValueMapValue
-    private String description;
+    private String type;
 
     public String getTitle() {
         return title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getType() {
+        return type;
     }
 
     @Override

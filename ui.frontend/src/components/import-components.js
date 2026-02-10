@@ -21,6 +21,8 @@ import './ExperienceFragment/ExperienceFragment';
 
 import {MapTo} from '@adobe/aem-react-editable-components';
 
+import {TitleEditConfig, TitleMyComponent} from './Title/Title'
+
 import {
     CarouselV1IsEmptyFn
 } from '@adobe/aem-core-components-react-spa/dist/isEmptyFunctions';
@@ -92,3 +94,4 @@ const TextEditConfig = {
 };
 
 MapTo('fiec-aem/components/text')(LazyTextComponent, TextEditConfig);
+MapTo( 'fiec-aem/components/title-component' )(TitleMyComponent, TitleEditConfig);

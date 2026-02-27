@@ -48,6 +48,8 @@ import {
     SeparatorV1,SeparatorV1IsEmptyFn,
     ListV2,ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
+import { Card, CardEditConfig } from "./Card/Card";
+import { Banner, BannerConfig } from "./Banner/Banner";
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
@@ -94,4 +96,6 @@ const TextEditConfig = {
 };
 
 MapTo('fiec-aem/components/text')(LazyTextComponent, TextEditConfig);
-MapTo( 'fiec-aem/components/title-component' )(TitleMyComponent, TitleEditConfig);
+MapTo('fiec-aem/components/title-component')(TitleMyComponent, TitleEditConfig);
+MapTo('fiec-aem/components/card-component')(Card, CardEditConfig);
+MapTo('fiec-aem/components/banner-component')(Banner, BannerConfig);

@@ -3,7 +3,6 @@ import { MapTo } from '@adobe/aem-react-editable-components';
 
 
 export const TitleMyComponent = ({ title, type }) => {
-  // fallback seguro
   if (!title) {
     return null;
   }
